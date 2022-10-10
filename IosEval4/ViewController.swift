@@ -30,8 +30,8 @@ class ViewController: UIViewController {
     func loadExpenseFromCoreData() {
         let request = Expense.fetchRequest()
         
-        let orderByName = NSSortDescriptor(key: name, ascending: true)
-        let orderByDate = NSSortDescriptor(key: date, ascending: true)
+        let orderByName = NSSortDescriptor(key: "name", ascending: true)
+        let orderByDate = NSSortDescriptor(key: "date", ascending: true)
         
         do {
             depenseTab = try manageObjectContext.fetch(request)
@@ -52,6 +52,31 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addDepense(_ sender: Any) {
+        let loginViewController =
+        storyboard?.instantiateViewController(identifier: "AddDepenseViewController")
+        
+        loginViewController?.modalPresentationStyle = .automatic
+        present(loginViewController!, animated:true, completion: nil )
     }
 }
 
+extension ViewController : UITableViewDataSource {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return depenseTab.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DepenseTableViewCell", for: indexPath) as? DepenseTableViewCell else {
+            fatalError("no cell called")
+        }
+        
+        let depense = depenseTab[indexPath.row]
+       // cell.name
+        //cell.value
+        // cell.date
+        
+        return cell
+    }
+    
+    
+}
