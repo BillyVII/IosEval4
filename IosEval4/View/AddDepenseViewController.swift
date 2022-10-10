@@ -8,12 +8,17 @@
 import UIKit
 
 class AddDepenseViewController: UIViewController {
+    let manageObjectContext = AppDelegate.shared.persistentContainer.viewContext
+    let context = ViewController()
 
+    @IBOutlet weak var expenseEditText: UITextField!
+    @IBOutlet weak var expenseValue: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
@@ -25,5 +30,24 @@ class AddDepenseViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func AddExpense(_ sender: Any) {
+        let newExpense = Expense(context:manageObjectContext)
+        newExpense.name = expenseEditText.text
+        if let floatValue = Float(expenseValue.text!) {
+            newExpense.value = floatValue
+        } else {
+            print("no text find")
+        }
+//        do {
+//            try manageObjectContext.save()
+//        } catch {
+//            print("no object")
+//        }
+        
+        context.saveData()
+        context.loadExpenseFromCoreData()
+        
+        
+    }
+    
 }

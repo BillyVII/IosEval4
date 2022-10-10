@@ -17,6 +17,7 @@
 		F14C09E028F3FADE00AE2BC7 /* DepenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C09DE28F3FADE00AE2BC7 /* DepenseTableViewCell.swift */; };
 		F14C09E128F3FADE00AE2BC7 /* DepenseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14C09DF28F3FADE00AE2BC7 /* DepenseTableViewCell.xib */; };
 		F14C09E428F4019900AE2BC7 /* AddDepenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C09E328F4019900AE2BC7 /* AddDepenseViewController.swift */; };
+		F14C09E628F4131E00AE2BC7 /* CDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C09E528F4131E00AE2BC7 /* CDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F14C09DE28F3FADE00AE2BC7 /* DepenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepenseTableViewCell.swift; sourceTree = "<group>"; };
 		F14C09DF28F3FADE00AE2BC7 /* DepenseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepenseTableViewCell.xib; sourceTree = "<group>"; };
 		F14C09E328F4019900AE2BC7 /* AddDepenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepenseViewController.swift; sourceTree = "<group>"; };
+		F14C09E528F4131E00AE2BC7 /* CDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F14C09E328F4019900AE2BC7 /* AddDepenseViewController.swift */,
+				F14C09E528F4131E00AE2BC7 /* CDataViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				F14C09CC28F3F4E600AE2BC7 /* ViewController.swift in Sources */,
 				F14C09C828F3F4E600AE2BC7 /* AppDelegate.swift in Sources */,
 				F14C09CA28F3F4E600AE2BC7 /* SceneDelegate.swift in Sources */,
+				F14C09E628F4131E00AE2BC7 /* CDataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

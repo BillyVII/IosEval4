@@ -52,10 +52,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addDepense(_ sender: Any) {
-        let loginViewController =
-        storyboard?.instantiateViewController(identifier: "AddDepenseViewController")
         
-        loginViewController?.modalPresentationStyle = .automatic
+        // a transformer en push 
+        let loginViewController =
+        storyboard?.instantiateViewController(identifier: "depenseNavigationController")
+        
+        loginViewController?.modalPresentationStyle = .fullScreen
         present(loginViewController!, animated:true, completion: nil )
     }
 }
