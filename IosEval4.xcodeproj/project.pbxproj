@@ -14,6 +14,8 @@
 		F14C09D228F3F4E600AE2BC7 /* IosEval4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F14C09D028F3F4E600AE2BC7 /* IosEval4.xcdatamodeld */; };
 		F14C09D428F3F4E700AE2BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14C09D328F3F4E700AE2BC7 /* Assets.xcassets */; };
 		F14C09D728F3F4E700AE2BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14C09D528F3F4E700AE2BC7 /* LaunchScreen.storyboard */; };
+		F14C09E028F3FADE00AE2BC7 /* DepenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14C09DE28F3FADE00AE2BC7 /* DepenseTableViewCell.swift */; };
+		F14C09E128F3FADE00AE2BC7 /* DepenseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F14C09DF28F3FADE00AE2BC7 /* DepenseTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F14C09D328F3F4E700AE2BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F14C09D628F3F4E700AE2BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F14C09D828F3F4E700AE2BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14C09DE28F3FADE00AE2BC7 /* DepenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepenseTableViewCell.swift; sourceTree = "<group>"; };
+		F14C09DF28F3FADE00AE2BC7 /* DepenseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DepenseTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				F14C09D528F3F4E700AE2BC7 /* LaunchScreen.storyboard */,
 				F14C09D828F3F4E700AE2BC7 /* Info.plist */,
 				F14C09D028F3F4E600AE2BC7 /* IosEval4.xcdatamodeld */,
+				F14C09DE28F3FADE00AE2BC7 /* DepenseTableViewCell.swift */,
+				F14C09DF28F3FADE00AE2BC7 /* DepenseTableViewCell.xib */,
 			);
 			path = IosEval4;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14C09E128F3FADE00AE2BC7 /* DepenseTableViewCell.xib in Resources */,
 				F14C09D728F3F4E700AE2BC7 /* LaunchScreen.storyboard in Resources */,
 				F14C09D428F3F4E700AE2BC7 /* Assets.xcassets in Resources */,
 				F14C09CF28F3F4E600AE2BC7 /* Main.storyboard in Resources */,
@@ -141,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14C09E028F3FADE00AE2BC7 /* DepenseTableViewCell.swift in Sources */,
 				F14C09D228F3F4E600AE2BC7 /* IosEval4.xcdatamodeld in Sources */,
 				F14C09CC28F3F4E600AE2BC7 /* ViewController.swift in Sources */,
 				F14C09C828F3F4E600AE2BC7 /* AppDelegate.swift in Sources */,
