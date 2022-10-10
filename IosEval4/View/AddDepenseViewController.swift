@@ -9,8 +9,9 @@ import UIKit
 
 class AddDepenseViewController: UIViewController {
     let manageObjectContext = AppDelegate.shared.persistentContainer.viewContext
-    let context = ViewController()
+  
 
+    @IBOutlet weak var expenseDate: UIDatePicker!
     @IBOutlet weak var expenseEditText: UITextField!
     @IBOutlet weak var expenseValue: UITextField!
     override func viewDidLoad() {
@@ -33,21 +34,19 @@ class AddDepenseViewController: UIViewController {
     @IBAction func AddExpense(_ sender: Any) {
         let newExpense = Expense(context:manageObjectContext)
         newExpense.name = expenseEditText.text
+        newExpense.date = expenseDate.date
         if let floatValue = Float(expenseValue.text!) {
             newExpense.value = floatValue
         } else {
             print("no text find")
         }
-//        do {
-//            try manageObjectContext.save()
-//        } catch {
-//            print("no object")
-//        }
+       do {
+           try manageObjectContext.save()
+      } catch {
+           print("no object",error)
+      }
         
-        context.saveData()
-        context.loadExpenseFromCoreData()
-        
-        
+  
     }
     
 }

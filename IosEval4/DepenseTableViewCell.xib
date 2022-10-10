@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Depense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZA-3C-Jlg">
-                        <rect key="frame" x="51" y="30" width="68" height="21"/>
+                        <rect key="frame" x="51" y="30" width="68" height="140"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="prix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSd-ik-Zj4">
-                        <rect key="frame" x="343.5" y="30" width="28.5" height="21"/>
+                        <rect key="frame" x="343.5" y="30" width="28.5" height="140"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" systemColor="opaqueSeparatorColor"/>
                         <nil key="highlightedColor"/>
@@ -33,17 +33,19 @@
                 <constraints>
                     <constraint firstItem="xZA-3C-Jlg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="51" id="9Rs-Ir-bRz"/>
                     <constraint firstItem="jSd-ik-Zj4" firstAttribute="bottom" secondItem="xZA-3C-Jlg" secondAttribute="bottom" id="Fau-Bb-tB4"/>
+                    <constraint firstAttribute="bottom" secondItem="xZA-3C-Jlg" secondAttribute="bottom" constant="10" id="I9n-rV-WZH"/>
                     <constraint firstItem="xZA-3C-Jlg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="aPB-Jr-tPb"/>
                     <constraint firstAttribute="trailing" secondItem="jSd-ik-Zj4" secondAttribute="trailing" constant="10" id="hWx-V7-5JL"/>
                     <constraint firstItem="jSd-ik-Zj4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="sjr-Cv-5KI"/>
+                    <constraint firstAttribute="bottom" secondItem="jSd-ik-Zj4" secondAttribute="bottom" constant="10" id="xKR-Dd-qo4"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="depense" destination="H2p-sc-9uM" id="ttQ-f6-s8m"/>
-                <outlet property="price" destination="jSd-ik-Zj4" id="2O6-5m-v03"/>
+                <outlet property="depenseLabel" destination="xZA-3C-Jlg" id="UTx-Vt-DxA"/>
+                <outlet property="price" destination="jSd-ik-Zj4" id="5q2-g9-oDX"/>
             </connections>
-            <point key="canvasLocation" x="176.81159420289856" y="145.3125"/>
+            <point key="canvasLocation" x="-203" y="74"/>
         </tableViewCell>
     </objects>
     <resources>

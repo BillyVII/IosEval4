@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         loadExpenseFromCoreData()
+        
     }
 
     func loadExpenseFromCoreData() {
@@ -73,8 +74,9 @@ extension ViewController : UITableViewDataSource {
         }
         
         let depense = depenseTab[indexPath.row]
-       // cell.name
-        //cell.value
+        cell.depenseLabel.text = depense.name
+        let priceValue = String(depense.value)
+        cell.price.text = priceValue
         // cell.date
         
         return cell

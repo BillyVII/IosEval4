@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1428" y="49"/>
+            <point key="canvasLocation" x="-1794" y="49"/>
         </scene>
         <!--Add Depense View Controller-->
         <scene sceneID="TzP-OO-kyV">
@@ -111,6 +111,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WXu-kr-MXe"/>
                     <connections>
+                        <outlet property="expenseDate" destination="4l8-vX-KNz" id="gN5-0N-Rbi"/>
                         <outlet property="expenseEditText" destination="WBO-6e-mQ5" id="pm9-7a-eFg"/>
                         <outlet property="expenseValue" destination="80T-9x-RWj" id="ApU-s9-bzn"/>
                     </connections>
@@ -135,7 +136,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGX-l4-xUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1481" y="49"/>
+            <point key="canvasLocation" x="-813" y="49"/>
         </scene>
     </scenes>
     <resources>
